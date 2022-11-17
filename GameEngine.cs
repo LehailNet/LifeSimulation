@@ -84,17 +84,17 @@ namespace LifeSimulation
             return count;
         }
 
-        public void AddCell(int x, int y)
+        public void AddLife(int x, int y)
         {
-            UpdateCell(x, y, true);
+            UpdateLife(x, y, true);
         }
 
-        public void RemoveCell(int x, int y)
+        public void RemoveLife(int x, int y)
         {
-            UpdateCell(x, y, false);
+            UpdateLife(x, y, false);
         }
 
-        private void UpdateCell(int x, int y, bool state)
+        private void UpdateLife(int x, int y, bool state)
         {
             if (ValidateCellPosition(x, y))
                 field[x, y] = state;
