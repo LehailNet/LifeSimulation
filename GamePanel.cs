@@ -95,7 +95,7 @@ namespace LifeSimulation
                 var x = e.Location.X / resolution;
                 var y = e.Location.Y / resolution;
 
-                gameEngine.AddCell(x, y);
+                gameEngine.AddLife(x, y);
             }
 
             if (e.Button == MouseButtons.Right)
@@ -103,7 +103,7 @@ namespace LifeSimulation
                 var x = e.Location.X / resolution;
                 var y = e.Location.Y / resolution;
 
-                gameEngine.RemoveCell(x, y);
+                gameEngine.RemoveLife(x, y);
             }
         }
     }
